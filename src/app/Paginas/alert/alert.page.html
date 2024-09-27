@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" color="warning" id="Alertamia"> Mi alerta </ion-button>
+  <ion-alert
+    trigger= "Alertamia"
+    header= "Hola Jorge"
+    mesasage="A beber mamajuana"
+    [buttons]= "alertaboton">
+  </ion-alert>
+</ion-content>
